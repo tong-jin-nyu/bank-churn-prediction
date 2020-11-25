@@ -178,56 +178,6 @@ There are 5 feature categories marked with different initials:
 **Total number of features: 55**
 
 ---
-
-## Details - Dimensions
-
-**Train:**
-
-Number of Rows: 
-
-```{r dim-train, echo=FALSE}
-print(nrow(dat_x_aum_m7))
-```
-
-**Train validation:**
-
-```{r dim-train-valid, echo=FALSE}
-print(nrow(dat_y))
-```
-
-
-**Test:**
-
-Number of Rows:
-
-```{r dim-test, echo=FALSE}
-print(nrow(dat_test))
-```
-
-Number of Columns: 1 (label)
-
----
-
-## Details - Train Churn Rate
-
-```{r echo=FALSE}
-p <- ggplot(data = dat_y, aes(x = label)) + 
-  geom_histogram(binwidth = 1) + 
-  theme_minimal()
-
-ggplotly(p)
-```
-
----
-class: inverse, center, middle
-
-# Exploratory Data Analysis
-
----
-
-
-
----
 class: inverse, center, middle
 
 # Project Plan
