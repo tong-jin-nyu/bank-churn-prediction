@@ -32,36 +32,97 @@ knitr::opts_chunk$set(
 
 # Dependencies
 library(plotly)
-library(openintro)
+library(dplyr)
+library(ggplot2)
 library(data.table)
 ```
 
 ```{r load, echo=FALSE}
-dat_cust_info_Q3 <- read.csv("data/")
+# Data processing
+dat_cust_info_Q3 <- read.csv("../../../data/x_train/cust_info_q3.csv", header = TRUE, na.strings = c("NA"))
+```
+
+```{r data-processing, echo=FALSE}
+dat_cust_info_Q3_clean <- dat_cust_info_Q3 %>%
+  rename(
+    id = cust_no,
+    sex = I1,
+    age = I2,
+    level = I3,
+    is_staff = I4,
+
+    occupation = I5,
+    is_loan = I6,
+    num_products = I7,
+    constellation = I8,
+    contribution_idx = I9,
+
+    ed_degree = I10,
+    house_income = I11,
+    industry = I12,
+    marital_status = I13,
+    position = I14,
+
+    is_QRcode = I15,
+    is_VIP = I16,
+    is_online = I17,
+    is_mobile = I18,
+    is_text = I19,
+    is_wechatpay = I20
+  ) 
+# dat_cust_info_Q4_clean <- dat_cust_info_Q4 %>%
+#   rename(
+#     id = cust_no,
+#     sex = I1,
+#     age = I2,
+#     level = I3,
+#     is_staff = I4,
+# 
+#     occupation = I5,
+#     is_loan = I6,
+#     num_products = I7,
+#     constellation = I8,
+#     contribution_idx = I9,
+# 
+#     ed_degree = I10,
+#     house_income = I11,
+#     industry = I12,
+#     marital_status = I13,
+#     position = I14,
+# 
+#     is_QRcode = I15,
+#     is_VIP = I16,
+#     is_online = I17,
+#     is_mobile = I18,
+#     is_text = I19,
+#     is_wechatpay = I20
+#   ) 
 ```
 
 ## Topics
 
-- Introduction
-    - Overview
-    - Tasks
+- Background
+- Exploratory Data Analysis
+    - Customer Demographic Information
     - Details
 - Project Plan
 
 ---
 class: inverse, center, middle
 
-# Introduction
+# Background
 
 ---
 
-## Overview
+## Introduction
 
-**Commercial Bank Customer Retention Prediction**
+This project applies supervised machine learning techniques to predict the customer retention preference of a commercial bank in China. The dataset is derived from an active competition on [Data Castle](https://www.dcjingsai.com/v2/cmptDetail.html?id=439).
+
+## Overview
 
 - Active competition on [Data Castle](https://www.dcjingsai.com/v2/cmptDetail.html?id=439)
     - Initial: 10/26
-    - 1st Round: 10/26 - 12/10
+    - **1st Round: 10/26 - 12/10**
     - 2nd Round: 12/11 - 12/25
     - Final Round: 12/26 - 1/10/2021
 
@@ -74,11 +135,15 @@ class: inverse, center, middle
 
 ## Tasks
 
-Banks need a better understanding of customer demands as they expanding their business. Specifically, banks are interested in learning about customer's churn rate and the change of their financial status. The purpose of predicting customer's retention probability is for precision marketing in order to prevent customers from churning. 
+As we embracing the era of digital finance, many financial institutions adapt themselves to a data-based business mode by applying various data mining and machine learning techniques to their services. The Xiamen International Bank ("The Bank") has been heavily invested in data-driven financial services in recent years. As the bank expanding its business, it requires a better understanding of customer demands, especially revenue-related preference. Coordinated with Data Castle, the bank launched this competition, aiming to invite data scientists and statisticians to provide solutions regarding a real-world service problem: predicting customer retentions.
 
-1. Build a model to predict retention probability based on real-world data records.
+The task of this competition is to design and implement a supervised machine learning algorithm to predict whether or not customers will continue their businesses with the bank in the near future. Specifically, the bank is interested in learning about customer's [churn rate](https://en.wikipedia.org/wiki/Churn_rate) and the probability of changing their financial status. The purpose of predicting customer's retention probability is for precision marketing that prevents the bank from losing revenues.
 
-2. Present a business solution for precision marketing based on model results.
+To solve this problem, our team accomplished the following tasks:
+
+1. Select and build a model combination that predicts retention probability based on the dataset.
+
+2. Based on model results, present a professional business proposal for precision marketing.
 
 ---
 
@@ -154,21 +219,13 @@ ggplotly(p)
 ```
 
 ---
+class: inverse, center, middle
 
-## Grading
+# Exploratory Data Analysis
 
-**Cohen's Kappa Statistic**
+---
 
-$$\kappa = \frac{Pr(a) - Pr(e)}{1 - Pr(e)}$$
 
-where `Pr(a)` is the predicted label, `Pr(e)` is the expected label value. 
-
-- `< 0`: No agreement
-- `0 - 0.2`: slight
-- `0.21 - 0.4`: fair
-- `0.41 - 0.6`: moderate
-- `0.61 - 0.8`: substantial
-- `0.81 - 1`: perfect
 
 ---
 class: inverse, center, middle
@@ -181,19 +238,28 @@ class: inverse, center, middle
 - Programming Language: `Python`
 
 - Structure: 
-    - Data processing:
-      - Cleaning
-      - EDA
-      - Feature Engineering (SVD)
-    - Baseline Model: Logistic regression with elastic net
-    - Test model: 
-      - Random forest
-      - Gradient boosting machine
-      - Multilayer perceptron
-    - AUC for selection
-    - Feature importance
-
+    - Data processing: **[Completed]**
+      - Cleaning **[Completed]**
+      - EDA **[Completed]**
+      - Feature Engineering (SVD) **[In Process]**
+    - Baseline Model: Logistic regression with elastic net **[In Process]**
+    - Test model: **[In Process]**
+      - Random forest **[In Process]**
+      - Gradient boosting machine **[In Process]**
+      - Multilayer perceptron **[In Process]**
+    - AUC for selection **[To Do]**
+    - Feature importance **[To Do]**
+    
 ---
-class: inverse, center, middle
 
-# Thank you!
+## Contact
+
+### Team
+
+**Team Name:** A3SR
+
+**Team Members:**
+
+- [Tong Jin](https://github.com/tong-jin-nyu), NYU
+- [Zheng Tan](https://github.com/ZhengAndyTan), NYU
+- [Zixuan Zhou](https://github.com/timzhou1009), NYU
