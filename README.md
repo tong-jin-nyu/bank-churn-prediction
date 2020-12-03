@@ -16,14 +16,20 @@ This project has two affiliations:
 
 ### Competition Information
 
-**Time Schedule:**
+#### Time Schedule
 
 - First Round: 10/26/2020 - 12/10/2020
 - Second Round: 12/11/2020 - 12/25/2020 (top 50)
 - Second Round Review: 12/26/2020 - 01/10/2021
 - Final Round: Pending Schedule
 
-### Team
+#### Tasks
+
+With the development of finance and data science, banks established many contact marketing strategies, both online and off-line, in order to satisfy various customer demands, covering both regular business products and special channel trading services. Facing numerous requests, banks need to better understand customer's preferences on service selection. For daily business, they need to detect potential triggers that cause customers to leave. They also need to predict whether or not a customer will stay, given his/her financial situations. Through prediction and detection, banks can proactively provide marketing incentives to targeted customers who are likely to not retain. In this way, banks can achieve precision marketing and maximize revenues. 
+
+This competition requires competitors to build a prediciton model based on real-world customer data. It also asks competitors to provide feasible business solutions based on their model results.
+
+#### Team
 
 **Team Name:** NYU A3SR
 
@@ -35,4 +41,26 @@ This project has two affiliations:
 
 ## Data
 
+The data package contains two parts: 
 
+1. Train sets, `x_train.rar` and `y_train.rar`.
+
+2. Test set, `x_test.rar`.
+
+The hold-out dataset, `y_test.rar` is used to measure model performance and, therefore, is not given.
+
+### Train Sets
+
+The `x_train.rar` train set contains all the features. The `y_train.rar` contains the label for features. 
+
+Train sets contain random samples of customer data in two quarters: Q3-2020 (July, August and September) and Q4-2020 (October, November and December). 
+
+### Test Set
+
+The `x_test.rar` contains all the features of the test sets. It has the same features as the train set. 
+
+The test set contains random samples of customer data in the first quarter: Q1-2020 (January, February and March).
+
+### Process
+
+The process is to train models using the train sets and make predictions using the test set.
