@@ -61,6 +61,38 @@ The `x_test.rar` contains all the features of the test sets. It has the same fea
 
 The test set contains random samples of customer data in the first quarter: Q1-2020 (January, February and March).
 
+### Code Book
+##### aum_m(Y) 
+This set represents customer's assest at the end of month Y.
+
+| Variable Name | Description |
+| ------------- | ------------- |
+| cust_no  | custumer's ID (primary key)  |
+| X1  | structured deposit balance |
+| X2  | time deposit balance  |
+| X3  | time deposit balance  |
+| X4  | financial products balance  |
+| X5  | fund balance  |
+| X6  | assest management balance  |
+| X7  | loan balance  |
+| X8  | large deposit certificate balance  |
+
+##### behavior_m(Y) 
+records customers' behaviors in month Y.
+B6 and B7 only have data on month 3, 6, 9 and 12.
+
+| Variable Name | Description |
+| ------------- | ------------- |
+| cust_no  | custumer's ID (primary key)  |
+| B1  | mobile banking login times |
+| B2  | transfer-in times |
+| B3  | transfer-in money amount  |
+| B4  | transfer-out times |
+| B5  | transfer-out money amount  |
+| B6  | lateset transfer time  |
+| B7  | number of transfers in a season |
+
+
 ### Process
 
 The process is to train models using the train sets and make predictions using the test set.
