@@ -63,7 +63,7 @@ The test set contains random samples of customer data in the first quarter: Q1-2
 
 ### Code Book
 ##### aum_m(Y) 
-This set represents customer's assest at the end of month Y.
+This data set contains customer's assest at the end of month Y.
 
 | Variable Name | Description |
 | ------------- | ------------- |
@@ -78,8 +78,8 @@ This set represents customer's assest at the end of month Y.
 | X8  | large deposit certificate balance  |
 
 ##### behavior_m(Y) 
-records customers' behaviors in month Y.
-B6 and B7 only have data on month 3, 6, 9 and 12.
+This data set records customers' behaviors in month Y.
+B6 and B7 only have data of month 3, 6, 9 and 12.
 
 | Variable Name | Description |
 | ------------- | ------------- |
@@ -92,6 +92,73 @@ B6 and B7 only have data on month 3, 6, 9 and 12.
 | B6  | lateset transfer time  |
 | B7  | number of transfers in a season |
 
+##### big_event_Q(Z)
+This data set records customers' important behaviors in the season Z.
+
+| Variable Name | Description |
+| ------------- | ------------- |
+| cust_no  | custumer's ID (primary key)  |
+| E1  | account opening date |
+| E2  | online banking opening date |
+| E3  | mobile banking opening date  |
+| E4  | first online banking login date |
+| E5  | first mobile banking login date |
+| E6  | first demand deposit date |
+| E7  | first time deposit date |
+| E8  | first loan date |
+| E9  | first overdue date |
+| E10  | first cash transaction date |
+| E11  | first bank-securities transfer date |
+| E12  | first transfer at counter date |
+| E13  | first transfer via online banking date |
+| E14  | first transfer via mobile banking date |
+| E15  | maximum amount transferred out of another bank |
+| E16  | maximum amount transferred out of another bank date |
+| E17  | Maximum transfer amount from other bank |
+| E18  | Maximum transfer amount from other bank date|
+
+#####  cunkuan_m(Y)
+This data set contains customers' deposits in month Y.
+
+| Variable Name | Description |
+| ------------- | ------------- |
+| cust_no  | custumer's ID (primary key)  |
+| C1  | deposit products value|
+| C2  | number of deposit products  |
+
+#####  cust_avli_Q(Z)
+This data set contains customers list in the season Z.
+
+| Variable Name | Description |
+| ------------- | ------------- |
+| cust_no  | custumer's ID (primary key)  |
+
+##### cust_info_q(Z)
+This data set contains customer information in the season Z.
+
+| Variable Name | Description |
+| ------------- | ------------- |
+| cust_no  | custumer's ID (primary key)  |
+| l1  | gender |
+| l2  | age |
+| l3  | class |
+| l4  | tag |
+| l5  | occupation |
+| l6  | deposit customer tag |
+| l7  | number of products owning |
+| l8  | constellation |
+| l9  | contribution |
+| l10  | education level |
+| l11  | family annual income |
+| l12  | field description |
+| l13  | marriage description |
+| l14  | occupation description |
+| l15  | QR code recipient |
+| l16  | VIP |
+| l17  | online banking client |
+| l18  | mobile banking client |
+| l19  | SMS client |
+| l20  | WeChat Pay |
 
 ### Process
 
