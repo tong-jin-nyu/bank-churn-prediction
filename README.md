@@ -70,7 +70,7 @@ This data set contains customer's assest at the end of month Y.
 | cust_no  | custumer's ID (primary key)  |
 | X1  | structured deposit balance |
 | X2  | time deposit balance  |
-| X3  | time deposit balance  |
+| X3  | demand deposit balance  |
 | X4  | financial products balance  |
 | X5  | fund balance  |
 | X6  | assest management balance  |
