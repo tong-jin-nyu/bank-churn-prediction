@@ -49,22 +49,18 @@ The data package contains two parts:
 
 The hold-out dataset, `y_test.rar` is used to measure model performance and, therefore, is not given.
 
-### Train Sets
-
-The `x_train.rar` train set contains all the features. The `y_train.rar` contains the label for features. 
-
-Train sets contain random samples of customer data in two quarters: Q3-2020 (July, August and September) and Q4-2020 (October, November and December). 
-
-### Test Set
-
-The `x_test.rar` contains all the features of the test sets. It has the same features as the train set. 
-
-The test set contains random samples of customer data in the first quarter: Q1-2020 (January, February and March).
-
 ### Codebook
 
 For a complete list of variable descriptions, please visit our [wiki page](https://github.com/tong-jin-nyu/predicting-bank-customer-churn/wiki/Codebook).
 
-### Process
+## Results
 
-The process is to train models using the train sets and make predictions using the test set.
+### Singular Vector Decomposition
+
+![SVD Results](results/svd.png)
+Figure 1. SVD Results
+
+### Feature Importance Analysis
+
+![Feature Importance](results/feature_importance.png)
+Figure 2. Feature Importance Analysis
