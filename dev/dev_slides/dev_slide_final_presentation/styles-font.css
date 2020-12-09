@@ -1,0 +1,21 @@
+@import url(https://fonts.googleapis.com/css2?family=Secular+One);
+@import url(https://fonts.googleapis.com/css2?family=Roboto);
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Mono);
+
+body { 
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+h1, h2, h3 {
+    font-family: 'Secular One';
+    font-weight: normal;
+}
+p {
+    font-size: 20px;
+}
+ul {
+    font-size: 20px;
+}
+.remark-code, .remark-inline-code { 
+    font-family: 'Roboto Mono', 'Lucida Console', Monaco, monospace; 
+    font-size: 18px;
+}
