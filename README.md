@@ -25,7 +25,7 @@ If you have a bank account, you probably know that banks offer opening bonuses i
 
 This project has two affiliations: 
 
-1. It is the final project of the [Statistical Consulting Research Seminar](https://steinhardt.nyu.edu/degree/ms-applied-statistics-social-science-research/courses) course at New York University.
+1. It is the final project of the [Statistical Consulting Research Seminar](https://steinhardt.nyu.edu/degree/ms-applied-statistics-social-science-research/courses) course at New York University.
 
 2. It is the team project of an active competition on Data Castle: [2020 Financial Modeling Competition](https://www.dcjingsai.com/v2/cmptDetail.html?id=439) by [Xiamen International Bank](https://www.xib.com.cn/english/). 
 
