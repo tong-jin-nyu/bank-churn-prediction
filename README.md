@@ -1,10 +1,11 @@
 # Predicting Commercial Bank Retention (Churn) Rate using Supervised Machine Learning
 
-![](https://img.shields.io/github/languages/code-size/tong-jin-nyu/churn-prediction-using-supervised-learning)
+![Code Size](https://img.shields.io/github/languages/code-size/tong-jin-nyu/churn-prediction-using-supervised-learning)
+![Languages](https://img.shields.io/github/languages/count/tong-jin-nyu/churn-prediction-using-supervised-learning)
+![Python Versions](https://img.shields.io/pypi/pyversions/tqdm)
+![License](https://img.shields.io/github/license/tong-jin-nyu/churn-prediction-using-supervised-learning)
 
-![](https://img.shields.io/github/languages/count/tong-jin-nyu/churn-prediction-using-supervised-learning)
-
-![](https://img.shields.io/pypi/pyversions/tqdm)
+![Social Page](asset/social_cover.jpg)
 
 ## Description
 
